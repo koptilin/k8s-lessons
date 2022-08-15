@@ -5,19 +5,19 @@ metadata:
   labels:
     app  : my-k8s-app
     env  : prod
-    owner: Sergey
+    owner: SergeyKoptilin
 spec:
   replicas: 3
   selector:
     matchLabels:
-      project: cia
+      project: xxx
   template:
     metadata:
       labels:
-        project: cia
+        project: xxx
     spec:
       containers:
-        - name : cia-web
-          image: koptilinshub/k8sphp:version2
+        - name : xxx-web
+          image: koptilinshub/k8sphp:latest
           ports:
             - containerPort: 80
